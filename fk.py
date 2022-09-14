@@ -1,0 +1,8 @@
+a = open('theme.csv', 'r', encoding='utf-8')
+b = a.readlines()
+a.close()
+b.sort()
+print(b)
+c = open('tmeme_edit.csv','w',encoding='utf-8')
+c.writelines(b)
+c.close()
